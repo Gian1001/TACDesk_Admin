@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TACDESK - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <!-- <div class="sidebar-brand-icon rotate-n-15"> -->
+                    <div class="sidebar-brand-icon">
+                        <div class="logo_icon">
+                            <img src="TACDesklogowhite.png" class="mb-2" alt="alt">
+                        </div>
+                    
+                </div>
+                <!-- <div class="sidebar-brand-text mx-3">TACDesk</div> -->
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-house" ></i>
+                    <span >Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" >
+                Reports
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo" >
+                    <i class="fa-solid fa-phone" ></i>
+                    <span >In-call Reports</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-1 mx-3 collapse-inner rounded">
+                        <h6 class="collapse-header" >Type of Emergency</h6>
+                        
+                        <a class="collapse-item" href="collapse-reports.html" >Building or Excavation <br>Collapse </a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="car_accident-reports.html" >Car Accident</a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="fire-reports.html" >Fire Incident</a>
+                        <hr class="sidebar-divider">  
+                        <a class="collapse-item" href="flood-reports.html" >Flash Flood </a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="fight-reports.html" >Gang Fight/Street Fight</a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="medical-reports.html" >Medical Emergency </a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="robbery-reports.html" >Robbery</a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                       
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities" >
+                    <i class="fa-solid fa-file-invoice" ></i>
+                    <span >Through Form Reports</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-1 mx-3 collapse-inner rounded">
+                        <h6 class="collapse-header" >Type of Incidents</h6>
+                        <a class="collapse-item" href="constructionworker.html" >Construction Worker <br> Complaints</a>
+                        <hr class="sidebar-divider">
+                        <a class="collapse-item" href="illegalvendors.html" >Illegal Vendors</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="lostandfound.html" >Lost and Found</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="neigborhoodconcerns.html" >Neighborhood Concerns</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="permanentparking.html" >Permanent Parking</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="poweroutage.html" >Power Outage</a>
+                        <hr class="sidebar-divider ">
+                        
+                        <a class="collapse-item" href="subdivienvironment.html" >Subdivision Properties <br>and Environment</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="unauthorizedsolicitation.html" >Unauthorized Sollicitation</a>
+                        <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="waterinterrupt.html" >Water Interruption</a>
+                        <!-- <hr class="sidebar-divider ">
+                        <a class="collapse-item" href="#">Others</a> -->
+                    </div>
+                </div>
+            </li>
+
+
+
+        
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+             <!-- Heading -->
+             <div  class="sidebar-heading">
+                Configure Accounts
+            </div>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="users.html">
+                    <i class="fa-solid fa-user" ></i>
+                    <span >User Accounts</span></a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <!-- <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div> -->
+
+           
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none  mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                   
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+            
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <!-- <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-8 col-md-6 mb-4">
+                            <div class="card rounded-10 border-2 shadow h-55 " style="padding: 55px;" >
+                                <!-- style="background-image: url('temp1.jpg');   " -->
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col  mr-2 ">
+                                            <div class="font_color">
+                                            <!-- <i class="fa-solid fa-phone fa-2x d-flex justify-content-center mb-3"></i> -->
+                                            <!-- <input type="text" id="cwc_count"> -->
+                                            <div class="card_number">
+                                                <div class="h5 mb-3 text-s  font-weight-bold text-gray-800 "><span style="justify-content: left; display: flex;"  >Welcome to TACDesk!</span></div>
+
+                                                <!-- <div class="font-colors">
+                                                    <div class="text-s  font-weight-bold text-center text-primary text-uppercase mb-1">
+                                                        Overall Reports Through Form</div>
+                                                </div> -->
+                                                
+                                            </div>
+                                            
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-md-4 mb-4">
+                            <div class="card rounded-10 border-2 shadow h-100 "   >
+                                <!-- style="background-image: url('temp1.jpg');   " -->
+                                <div class="card-body p-1">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col  ">
+                                           
+                                            <!-- <i class="fa-solid fa-phone fa-2x d-flex justify-content-center mb-3"></i> -->
+                                            <!-- <input type="text" id="cwc_count"> -->
+                                            <div class="card_number h-100">
+                                                <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/14d25120d88/cavite/" data-label_1="CAVITE" data-label_2="WEATHER" data-days="3" data-theme="pure" >CAVITE WEATHER</a> -->
+                                                <div id="ww_a4582014cfbbb" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl5361"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a","sl_tof":"3"}'>Weather Data Source: <a href="https://wetterlang.de/" id="ww_a4582014cfbbb_u" target="_blank">Wettervorhersage für 30 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_a4582014cfbbb"></script>
+                                            </div>
+                                            
+                                           
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+
+                    
+
+                   
+
+                    
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-md-4 mb-2">
+                            <div class="card rounded-10 border-2 shadow h-80 "  >
+                                <!-- style="background-image: url('temp1.jpg');   " -->
+                                <div class="card-body " style="border-spacing: 0;">
+                                    <div class="row no-gutters align-items-center" style="border-spacing: 0;">
+                                        <div class="font_color">
+                                            <div class="font-colors">
+
+                                            <div class="text-lg  font-weight-bold justify-content-center align-items-center align-text-center text-primary  mb-2" style="font-size: 28px;" >
+                                                Report Status</div>
+                                            </div>
+                                        </div>
+                                        <table class="table table-borderless table-sm table-light my-0" style="border-spacing: 0;">
+                                            
+                                            <tbody>
+                                                
+                                                <tr>
+                                                
+                                                    <td><i class="fa-solid fa-hard-hat fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Construction Worker  Complaints</label></td>
+                                                    <td><span id="cwc_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-person-circle-question fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Illegal Vendors</label></td>
+                                                    <td><span id="iv_count" class="text-xs" style="color: black;"  >0</span></td>
+
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-person-circle-question fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Lost and Found</label></td>
+                                                    <td><span id="laf_count" class="text-xs" style="color: black;"  >0</span></td>
+
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-house-chimney-user fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Neighborhood Concerns</label></td>
+                                                    <td><span id="nbc_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-car fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Permanent Parking</label></td>
+                                                    <td><span id="pp_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-bolt fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Power Outage</label></td>
+                                                    <td><span id="po_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-seedling fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Subdivision Properties and Environment</label></td>
+                                                    <td><span id="sh_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-hand-holding-dollar fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Unauthorized Solicitation</label></td>
+                                                    <td><span id="us_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td><i class="fa-solid fa-droplet fa-2x  " style="color: black;" ></i></td>
+                                                    <td><label class="text-xs ml-3 " >Water Interruption</label></td>
+                                                    <td><span id="wi_count" class="text-xs" style="color: black;"  >0</span></td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                          </table>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card  -->
+                        <div class="col-8 mb-4">
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <div class="card rounded-10 border-2 shadow h-40 p-3 "   >
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    
+                                                    <div class="font_color">
+                                                        <div class="font-colors">
+                                                            <div class="text-lg  font-weight-bold text-center text-primary  mb-4" style="font-size: 28px;" >
+                                                                Reports Through Form</div>
+                                                        </div>
+                                                        <i class="fa-solid fa-file fa-3x d-flex justify-content-center mb-4" ></i>
+                                                        <!-- <input type="text" id="cwc_count"> -->
+                                                        <div class="card_number">
+                                                            <div class="h5  text-s  font-weight-bold text-gray-800 d-flex justify-content-center"><span id="tfr_count" >0</span></div>
+            
+                                                            
+        
+                                                            
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-4">
+                                    <div class="card rounded-10 border-2 shadow h-40 p-3 "  >
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    
+                                                    <div class="font_color">
+                                                        <div class="font-colors">
+                                                            <div class="text-lg  font-weight-bold text-center text-primary  mb-4" style="font-size: 28px;" >
+                                                                Reports Through Call</div>
+                                                        </div>
+                                                        <i class="fa-solid fa-phone fa-3x d-flex justify-content-center mb-4" ></i>
+                                                        <!-- <input type="text" id="cwc_count"> -->
+                                                        <div class="card_number">
+                                                            <div class="h5  text-s  font-weight-bold text-gray-800 d-flex justify-content-center"><span id="icr_count" >0</span></div>
+            
+                                                            
+        
+                                                            
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mb-4 "> 
+                                    <div class="card rounded-10 border-2 shadow h-100" style="padding: 6px;"  >
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col ">
+                                                    
+                                                    <div class="font_color">
+                                                        
+                                                            <div class="text-lg  font-weight-bold text-center text-primary  mb-2" style="font-size: 28px;" >
+                                                                Reports' Status
+                                                            </div>
+                                                            
+                                                                
+                                                                
+                                                                
+                                                           
+                                                            
+                                                          
+
+                                                        
+                                                        
+                                                        
+                                                       
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-gutters ">
+                                            
+                                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                                                
+                                                    <div class="font_color">
+                                                        
+                                                        <label class="text-s  mb-2">Pending</label>
+                                                    
+                                                   
+                                                        <div class="col align-items-center">
+                                                            
+                                                                <i class="fa-solid fa-bookmark mb-2 " style="font-size: 12x;"></i><br>
+                                                            <span id="prs_count" style=" font-size: 28px;" >0</span>
+                                                           
+                                                            
+                                                        </div>
+                                                    </div>
+                                                        
+                                                   
+                                                   
+                                                
+                                            
+                                       
+                                        
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-center align-items-center">
+
+                                                    <div class="font_color">
+                                                        <label class="text-s  mb-2 d-flex justify-content-center align-text-center">Resolved</label>
+                                                    
+                                                   
+                                                       
+                                                            
+                                                                <i class="fa-solid fa-check mb-2  " style="font-size: 12x;"></i><br>
+                                                            <span id="rrs_count" style=" font-size: 28px;" >0</span>
+                                                            
+                                                            
+                                                        
+                                                    </div>
+                                                        
+                                                    
+                                                </div>
+
+                                                <div class="col-4 d-flex justify-content-center align-items-center">
+
+                                                    <div class="font_color">
+                                                        <label class="text-s  mb-2 d-flex justify-content-center align-text-center">Monitoring</label>
+                                                    
+                                                   
+                                                       
+                                                            
+                                                                <i class="fa-solid fa-magnifying-glass mb-2  " style="font-size: 12x;"></i><br>
+                                                            <span id="mrs_count" style=" font-size: 28px;" >0</span>
+                                                            
+                                                            
+                                                        
+                                                    </div>
+                                                        
+                                                    
+                                                </div>
+                                              
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+
+                            
+                        </div>
+
+                        
+                      
+
+                        
+                    </div>
+
+                    
+                    
+
+                        
+                     
+            
+
+            </div>
+
+            
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+        <!-- Footer  -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span class="text-xs" style="font-size: 20px;">Copyright &copy; TACDesk 2023</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" >Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+      <script id="Mainscript">
+        var firebaseConfig = {
+        apiKey: "AIzaSyBs766BU9-JbDxy8GLgaZ-JRbl9GvX-SxM",
+          authDomain: "reportit-6bf64.firebaseapp.com",
+          databaseURL: "https://reportit-6bf64-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "reportit-6bf64",
+            storageBucket: "reportit-6bf64.appspot.com",
+                                                            messagingSenderId: "463324498936",
+                                                            appId: "1:463324498936:web:1321d44f4caee28fb5a40d",
+                                                            measurementId: "G-5VTD6WF5WT"
+                                                        };
+                                                        firebase.initializeApp(firebaseConfig);
+                                                        var number;
+                                                        
+                                                        const db = getDatabase();
+                                                </script>
+    
+    <script>
+        
+        // COUNTER FOR EACH TYPE OF REPORT THROUGH FORM
+        
+         
+        firebase.database().ref('ConstructionWorkerReports/').orderByChild('reportID').on('value', (snapData) => {
+         let cwc_count = snapData.numChildren();
+         document.getElementById('cwc_count').innerHTML = cwc_count;
+        
+         firebase.database().ref('IllegalVendorReports/').orderByChild('reportID').on('value', (snapData) => {
+         let iv_count = snapData.numChildren();
+         document.getElementById('iv_count').innerHTML = iv_count;
+       
+         firebase.database().ref('LostandFoundReports/').orderByChild('reportID').on('value', (snapData) => {
+         let laf_count = snapData.numChildren();
+         document.getElementById('laf_count').innerHTML = laf_count;
+        
+         firebase.database().ref('NeighborhoodConcernsReports/').orderByChild('reportID').on('value', (snapData) => {
+         let nbc_count = snapData.numChildren();
+         document.getElementById('nbc_count').innerHTML = nbc_count;
+
+         firebase.database().ref('PermanentParkingReports/').orderByChild('reportID').on('value', (snapData) => {
+         let pp_count = snapData.numChildren();
+         document.getElementById('pp_count').innerHTML = pp_count;
+
+         firebase.database().ref('PowerOutageReports/').orderByChild('reportID').on('value', (snapData) => {
+         let po_count = snapData.numChildren();
+         document.getElementById('po_count').innerHTML = po_count;
+
+         firebase.database().ref('SubdivisionHazardsReports/').orderByChild('reportID').on('value', (snapData) => {
+         let sh_count = snapData.numChildren();
+         document.getElementById('sh_count').innerHTML = sh_count;
+
+         firebase.database().ref('UnauthorizedSolicitationReports/').orderByChild('reportID').on('value', (snapData) => {
+         let us_count = snapData.numChildren();
+         document.getElementById('us_count').innerHTML = us_count;
+        
+         firebase.database().ref('WaterInterruptionReports/').orderByChild('reportID').on('value', (snapData) => {
+         let wi_count = snapData.numChildren();
+         document.getElementById('wi_count').innerHTML = wi_count;
+
+         
+            
+         document.getElementById('tfr_count').innerHTML = cwc_count + iv_count + laf_count + nbc_count + pp_count + po_count + sh_count + us_count + wi_count;
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+         
+        // COUNTER FOR PENDING REPORT STATUS
+        
+        firebase.database().ref('ConstructionWorkerReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let cwc_count_pending = snapData.numChildren();
+
+        firebase.database().ref('IllegalVendorReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let iv_count_pending = snapData.numChildren();
+
+        firebase.database().ref('LostandFoundReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let laf_count_pending = snapData.numChildren();
+
+        firebase.database().ref('NeighborhoodConcernsReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let nbc_count_pending = snapData.numChildren();
+
+        firebase.database().ref('PermanentParkingReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let pp_count_pending = snapData.numChildren();
+
+        firebase.database().ref('PowerOutageReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let po_count_pending = snapData.numChildren();
+
+        firebase.database().ref('SubdivisionHazardsReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let sh_count_pending = snapData.numChildren();
+
+        firebase.database().ref('UnauthorizedSolicitationReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let us_count_pending = snapData.numChildren();
+
+        firebase.database().ref('WaterInterruptionReports/').orderByChild('ReportStatus').equalTo('Pending').on('value', (snapData) => {
+        let wi_count_pending = snapData.numChildren();
+
+        document.getElementById('prs_count').innerHTML = cwc_count_pending + iv_count_pending + laf_count_pending + nbc_count_pending 
+        + pp_count_pending + po_count_pending + sh_count_pending + us_count_pending + wi_count_pending;
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+
+         // COUNTER FOR RESOLVED REPORT STATUS
+
+         firebase.database().ref('ConstructionWorkerReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let cwc_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('IllegalVendorReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let iv_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('LostandFoundReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let laf_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('NeighborhoodConcernsReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let nbc_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('PermanentParkingReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let pp_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('PowerOutageReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let po_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('SubdivisionHazardsReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let sh_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('UnauthorizedSolicitationReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let us_count_resolved = snapData.numChildren();
+
+        firebase.database().ref('WaterInterruptionReports/').orderByChild('ReportStatus').equalTo('Resolved').on('value', (snapData) => {
+        let wi_count_resolved = snapData.numChildren();
+
+        document.getElementById('rrs_count').innerHTML = cwc_count_resolved + iv_count_resolved + laf_count_resolved + nbc_count_resolved 
+        + pp_count_resolved + po_count_resolved + sh_count_resolved + us_count_resolved + wi_count_resolved;
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+
+
+        // COUNTER FOR MONITORING REPORT STATUS
+
+        firebase.database().ref('ConstructionWorkerReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let cwc_count_monitoring = snapData.numChildren();
+
+        firebase.database().ref('IllegalVendorReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let iv_count_monitoring  = snapData.numChildren();
+
+        firebase.database().ref('LostandFoundReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let laf_count_monitoring  = snapData.numChildren();
+
+        firebase.database().ref('NeighborhoodConcernsReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let nbc_count_monitoring = snapData.numChildren();
+
+        firebase.database().ref('PermanentParkingReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let pp_count_monitoring  = snapData.numChildren();
+
+        firebase.database().ref('PowerOutageReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let po_count_monitoring  = snapData.numChildren();
+
+        firebase.database().ref('SubdivisionHazardsReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let sh_count_monitoring  = snapData.numChildren();
+
+        firebase.database().ref('UnauthorizedSolicitationReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let us_count_monitoring = snapData.numChildren();
+
+        firebase.database().ref('WaterInterruptionReports/').orderByChild('ReportStatus').equalTo('Under Investigation').on('value', (snapData) => {
+        let wi_count_monitoring = snapData.numChildren();
+
+        document.getElementById('mrs_count').innerHTML = cwc_count_monitoring + iv_count_monitoring + laf_count_monitoring + nbc_count_monitoring 
+        + pp_count_monitoring + po_count_monitoring + sh_count_monitoring + us_count_monitoring + wi_count_monitoring;
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+
+        // COUNTER FOR EACH TYPE OF REPORT THROUGH CALL
+
+        firebase.database().ref('BECollapseReports/').orderByChild('reportID').on('value', (snapData) => {
+        let bce_count = snapData.numChildren();
+
+        firebase.database().ref('CarAccidentReports/').orderByChild('reportID').on('value', (snapData) => {
+        let ca_count = snapData.numChildren();
+
+        firebase.database().ref('FireIncidentReports/').orderByChild('reportID').on('value', (snapData) => {
+        let fi_count = snapData.numChildren();
+
+        firebase.database().ref('FlashFloodReports/').orderByChild('reportID').on('value', (snapData) => {
+        let ff_count = snapData.numChildren();
+
+        firebase.database().ref('StreetFightReports/').orderByChild('reportID').on('value', (snapData) => {
+        let sf_count = snapData.numChildren();
+
+        firebase.database().ref('MedicalEmergencyReports/').orderByChild('reportID').on('value', (snapData) => {
+        let me_count = snapData.numChildren();
+
+        firebase.database().ref('RobberyIncidentReports/').orderByChild('reportID').on('value', (snapData) => {
+        let ri_count = snapData.numChildren();
+
+
+        document.getElementById('icr_count').innerHTML = bce_count + ca_count + fi_count + ff_count + sf_count + me_count + ri_count;
+
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+
+         
+         
+       
+        
+        </script>
+    
+
+</body>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+  
+
+</html>

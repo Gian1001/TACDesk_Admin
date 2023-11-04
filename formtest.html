@@ -1,0 +1,59 @@
+<select id="month">
+  <option value="0">Jan</option>
+  <option value="1">Feb</option>
+  <option value="2">Mar</option>
+  <!-- Add options for all 12 months -->
+</select>
+
+<select id="day">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <!-- Add options for all 31 days -->
+</select>
+
+<select id="year">
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <!-- Add options for desired range of years -->
+</select>
+
+<input type="text" id="displayDate" value="Jan 2, 2022" >
+
+<script>
+const datemodx = "Jan 2, 2022";
+const [month, day, year] = datemodx.split(/\s|,\s/);
+
+const monthIndex = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(month);
+
+document.getElementById('month').selectedIndex = monthIndex;
+document.getElementById('day').value = day;
+document.getElementById('year').value = year;
+
+document.getElementById('month').addEventListener('change', updateDate);
+document.getElementById('day').addEventListener('change', updateDate);
+document.getElementById('year').addEventListener('change', updateDate);
+document.getElementById('displayDate').addEventListener('input', updateDropdowns);
+
+function updateDropdowns() {
+  const inputValue = document.getElementById('displayDate').value;
+  const [month, day, year] = inputValue.split(/\s|,\s/);
+
+  const monthIndex = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(month);
+
+  document.getElementById('month').selectedIndex = monthIndex;
+  document.getElementById('day').value = day;
+  document.getElementById('year').value = year;
+}
+
+function updateDate() {
+  const month = document.getElementById('month').value;
+  const day = document.getElementById('day').value;
+  const year = document.getElementById('year').value;
+
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  document.getElementById('displayDate').value = months[month] + ' ' + day + ', ' + year;
+}
+</script>
